@@ -1,38 +1,8 @@
 [{
-    "id": 1,
-    "team": "Notre Dame",
-    "date": "2022-09-24",
-    "time": "19:00:00",
-    "location": "Chapel Hill, NC"
-}, {
-    "id": 2,
-    "team": "Georgia Tech",
-    "date": "2022-09-01",
-    "time": "14:30:00",
-    "location": "Atlanta, GA"
-}, {
-    "id": 3,
-    "team": "Pittsburgh",
-    "date": "2022-10-01",
-    "time": "15:00:00",
-    "location": "Chapel Hill, NC"
-}, {
-    "id": 4,
-    "team": "Virginia Tech",
-    "date": "2022-10-08",
-    "time": "19:30:00",
-    "location": "Charleston, S.C."
-}, {
-    "id": 5,
-    "team": "NC State",
-    "date": "2022-10-15",
-    "time": "16:30:00",
-    "location": "Raleigh, NC"
-}, {
-    "id": 6,
-    "team": "FAMU",
-    "date": "2022-10-22",
-    "time": "15:30:00",
+    "id": 8,
+    "team": "Miami",
+    "date": "2022-11-19",
+    "time": "17:00:00",
     "location": "Chapel Hill, NC"
 }, {
     "id": 7,
@@ -41,9 +11,39 @@
     "time": "18:00:00",
     "location": "Durham, NC"
 }, {
-    "id": 8,
-    "team": "Miami",
-    "date": "2022-11-19",
-    "time": "17:00:00",
+    "id": 6,
+    "team": "FAMU",
+    "date": "2022-10-22",
+    "time": "15:30:00",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 5,
+    "team": "NC State",
+    "date": "2022-10-15",
+    "time": "16:30:00",
+    "location": "Raleigh, NC"
+}, {
+    "id": 4,
+    "team": "Virginia Tech",
+    "date": "2022-10-08",
+    "time": "19:30:00",
+    "location": "Charleston, S.C."
+}, {
+    "id": 3,
+    "team": "Pittsburgh",
+    "date": "2022-10-01",
+    "time": "15:00:00",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 2,
+    "team": "Georgia Tech",
+    "date": "2022-09-01",
+    "time": "14:30:00",
+    "location": "Atlanta, GA"
+}, {
+    "id": 1,
+    "team": "Notre Dame",
+    "date": "2022-09-24",
+    "time": "19:00:00",
     "location": "Chapel Hill, NC"
 }]
