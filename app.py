@@ -29,7 +29,7 @@ def index():
             return render_template('index.html', sports=football_list)
         if type_of_sports == "soccer":
             return render_template('index.html', sports=soccer_list)
-        return render_template('index.html', sports=basketball_list)
+        return render_template('index.html')
     else:
         return render_template('index.html')
 

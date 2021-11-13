@@ -19,11 +19,11 @@
 
             <div class="schedule">
               {% for team in sports %}
-              <div class="game" onClick="myFunction()">
+              <div class="game" onClick='myFunction(event)'>
                   <img src="/static/logo.png" alt="UNC-logo"/>
                   <div class="game-text">
                     <h1 class="team">{{team.team}}</h1>
-                    <p class="date">{{team.date}}</p>
+                    <p id="date" class="date">{{team.date}}</p>
                     <p class="time">{{team.time}}</p>
                     <p class="location">{{team.location}}</p>
                   </div>
@@ -32,17 +32,19 @@
             </div>
 
             <script>
-              function myFunction() {
-                alert("hello")
+              function myFunction(event) {
+                // const date = document.getElementById("date")
+                const event_date = new Date(event.currentTarget.children[1].children[1].innerHTML)
+                today = new Date()
+
+                
+
+                // alert(`${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`)
+                
               }
             </script>
 
-<p>Date/Time: <span id="datetime"></span></p>
 
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-</script>
         </div>
     </body>
 </html>
