@@ -32,18 +32,6 @@ def index():
         return render_template('index.html')
     else:
         return render_template('index.html')
-
-# @app.route("/sports", methods=["POST"])
-# def sports():
-#     if request.method == "POST":
-#         type_of_sports: str = request.form["sports"]
-#         if type_of_sports == "basketball":
-#             return render_template('sports.html', sports=basketball_list)
-#         if type_of_sports == "football":
-#             return render_template('sports.html', sports=football_list)
-#         if type_of_sports == "soccer":
-#             return render_template('sports.html', sports=soccer_list)
-#         return render_template('sports.html', sports=basketball_list)
-
+        
 if __name__ == '__main__':
     app.run(debug=True)
