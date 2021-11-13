@@ -3,70 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Go Heels Notifications</title>
+        <link rel='stylesheet' href='/static/reset.css' />  
         <link rel='stylesheet' href='/static/styles.css' />    
     </head>
     <body>
         <h1>Go Heels Notifications</h1>
 
         <div class="myDiv">
-            <h3>Tar Heel Sports Notification Portal</h3>
-
-            <form action="/sports" method="post">
-              Select an Team to Learn More:
-                <input type="radio" name="sports" id="basketball" value="basketball" onClick="myFunction()"/><label for="basketball">Basketball</label>
-                <input type="radio" name="sports" id="football" value="football" onClick="myFunction()"/><label for="football">Football</label>
-                <input type="radio" name="sports" id="soccer" value="soccer" onClick="myFunction()"/><label for="soccer">Soccer</label>
-                <input type="radio" name="sports" id="random" value="random" onClick="myFunction()"/><label for="random">Random Team!</label>
-                <input type="submit" value="Submit">
-
-                <br/> <br />
-
-                <p id="basketball-text" name="radio_group" style="display:none">Basketball Information</p>
-                <p id="football-text" name="radio_group" style="display:none">Football Information</p>
-                <p id="soccer-text" name="radio_group" style="display:none">Soccer Information</p>
-                <p id="random-text" name="radio_group" style="display:none">Random Information</p>
-
-              
+            <form action="/" method="post">
+                <div class="radio-group"><input type="radio" name="sports" id="basketball" value="basketball"/><label for="basketball">Basketball</label></div>
+                <div class="radio-group"><input type="radio" name="sports" id="football" value="football"/><label for="football">Football</label></div>
+                <div class="radio-group"><input type="radio" name="sports" id="soccer" value="soccer" /><label for="soccer">Soccer</label></div>
+                <input class="submit-button" type="submit" value="Let's go">
             </form>
-            <!-- {% extends "./sports.html" %} -->
+
+            <div class="schedule">
+              {% for team in sports %}
+              <div class="game" onClick="myFunction()">
+                  <img src="/static/logo.png" alt="UNC-logo"/>
+                  <div class="game-text">
+                    <h1 class="team">{{team.team}}</h1>
+                    <p class="date">{{team.date}}</p>
+                    <p class="time">{{team.time}}</p>
+                    <p class="location">{{team.location}}</p>
+                  </div>
+              </div>
+              {% endfor %}
+            </div>
 
             <script>
-                function myFunction() {
-                var btext = document.getElementById("basketball-text");
-                var ftext = document.getElementById("football-text");
-                var stext = document.getElementById("soccer-text");
-                var rtext = document.getElementById("random-text");
+              function myFunction() {
+                alert("hello")
+              }
+            </script>
 
-        
-                  if (document.getElementById("basketball").checked == true){
-                    ftext.style.display = "none";
-                    stext.style.display = "none";
-                    rtext.style.display = "none";
-                    btext.style.display = "block";
-                  }
-                  else if (document.getElementById("football").checked == true){
-                    btext.style.display = "none";
-                    stext.style.display = "none";
-                    rtext.style.display = "none";
-                    ftext.style.display = "block";
-                  } 
-                  else if (document.getElementById("soccer").checked == true){
-                    btext.style.display = "none";
-                    ftext.style.display = "none";
-                    rtext.style.display = "none";
-                    stext.style.display = "block";
-                  }
-                  else if (document.getElementById("random").checked == true){
-                    btext.style.display = "none";
-                    ftext.style.display = "none";
-                    stext.style.display = "none";
-                    rtext.style.display = "block";
-                  }
-                  else {
-                     text.style.display = "none";
-                  }
-                }
-                </script> 
+<p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
         </div>
     </body>
 </html>

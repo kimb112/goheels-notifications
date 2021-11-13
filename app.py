@@ -5,25 +5,45 @@ import json
 
 # from bs4 import BeautifulSoup
 
-with open('./index.json', 'r') as myfile:
-    data = myfile.read()
-sports_list: list[dict[str, str]] = json.loads(data)
+with open('./basketball.json', 'r') as myfile:
+    basketball = myfile.read()
+basketball_list: list[dict[str, str]] = json.loads(basketball)
+
+with open('./football.json', 'r') as myfile:
+    football = myfile.read()
+football_list: list[dict[str, str]] = json.loads(football)
+
+with open('./soccer.json', 'r') as myfile:
+    soccer = myfile.read()
+soccer_list: list[dict[str, str]] = json.loads(soccer)
 
 app: Flask = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def index():
-    return render_template('index.html', sports=sports_list)
-
-@app.route("/sports", methods=["POST"])
-def sports():
-    # teams: list[dict[str, str]] = json.loads(sports())
     if request.method == "POST":
         type_of_sports: str = request.form["sports"]
         if type_of_sports == "basketball":
-        # if type_of_sports == "basketball":
-            return render_template('sports.html', sports=sports_list)
-        return render_template('sports.html', sports=sports_list)
+            return render_template('index.html', sports=basketball_list)
+        if type_of_sports == "football":
+            return render_template('index.html', sports=football_list)
+        if type_of_sports == "soccer":
+            return render_template('index.html', sports=soccer_list)
+        return render_template('index.html', sports=basketball_list)
+    else:
+        return render_template('index.html')
+
+# @app.route("/sports", methods=["POST"])
+# def sports():
+#     if request.method == "POST":
+#         type_of_sports: str = request.form["sports"]
+#         if type_of_sports == "basketball":
+#             return render_template('sports.html', sports=basketball_list)
+#         if type_of_sports == "football":
+#             return render_template('sports.html', sports=football_list)
+#         if type_of_sports == "soccer":
+#             return render_template('sports.html', sports=soccer_list)
+#         return render_template('sports.html', sports=basketball_list)
 
 if __name__ == '__main__':
     app.run(debug=True)

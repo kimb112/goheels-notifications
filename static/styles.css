@@ -1,11 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+:root {
+  --roboto: 'Roboto', sans-serif;
+  --lobster: 'Lobster', cursive;
+}
+
+html, body {
+  font-family: var(--roboto);
+}
+
+img {
+  width: 100px;
+}
+
 h1 {
-    color: #151515;
-    text-align: center;
-  }
+  font-family: var(--lobster);
+  color: #151515;
+  text-align: center;
+  font-size: 50px;
+  margin: 20px;
+  color: #4B9CD3;
+}
+
+.team {
+  font-family: var(--lobster);
+  font-size: 20px;
+  padding: 0px;
+  margin: 10px;
+}
 
 .myDiv {
-  background-color: #4B9CD3;
+  /* background-color: #4B9CD3; */
   text-align: center;
   margin: auto;
   padding: 5px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 10px;
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="submit"], input[type="radio"] {
+  outline: none;
+  border: none;
+}
+
+.submit-button {
+  padding: 10px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.schedule {
+  display: flex;
+  flex: column;
+  flex-wrap: wrap;
+}
+
+.game {
+  padding: 20px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border: 1px solid #4B9CD3;
+  border-radius: 7px;
+}
+
+.game-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.alert {
+  padding: 20px;
+  background-color: lightblue;
+  color: black;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: navy
 }
