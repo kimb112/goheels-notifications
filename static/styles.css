@@ -1,9 +1,11 @@
 h1 {
-    color: #057845;
+    color: #151515;
+    text-align: center;
   }
 
 .myDiv {
-  border: 5 px outset red;
-  background-color: lightblue;
+  background-color: #4B9CD3;
   text-align: center;
+  margin: auto;
+  padding: 5px;
 }

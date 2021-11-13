@@ -1,0 +1,73 @@
+[{
+    "id": 1,
+    "team": "Notre Dame",
+    "date": "Sept. 24 (FRI)",
+    "time": "7:30PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 2,
+    "team": "Georgia Tech",
+    "date": "Nov 9 (TUE)",
+    "time": "7:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 3,
+    "team": "Pittsburgh",
+    "date": "Nov 12 (FRI)",
+    "time": "9:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 4,
+    "team": "Virginia Tech",
+    "date": "Nov 16 (TUE)",
+    "time": "9:00PM",
+    "location": "Charleston, S.C."
+}, {
+    "id": 5,
+    "team": "NC State",
+    "date": "Nov 20 (SAT)",
+    "time": "4:00PM",
+    "location": "Uncasville, Conn"
+}, {
+    "id": 6,
+    "team": "FAMU",
+    "date": "Nov 21 (SUN)",
+    "time": "1:00PM OR 3:30PM",
+    "location": "Uncasville, Conn."
+}, {
+    "id": 7,
+    "team": "Duke",
+    "date": "Nov 23 (TUE)",
+    "time": "7:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 8,
+    "team": "Miami",
+    "date": "Nov 5 (FRI)",
+    "time": "7:30PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 9,
+    "team": "Virginia",
+    "date": "Nov 9 (TUE)",
+    "time": "7:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 10,
+    "team": "Wake Forest",
+    "date": "Nov 12 (FRI)",
+    "time": "9:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 11,
+    "team": "Appalachian State",
+    "date": "Nov 16 (TUE)",
+    "time": "9:00PM",
+    "location": "Charleston, S.C."
+}, {
+    "id": 12,
+    "team": "Georgia State",
+    "date": "Nov 20 (SAT)",
+    "time": "4:00PM",
+    "location": "Uncasville, Conn"
+}]

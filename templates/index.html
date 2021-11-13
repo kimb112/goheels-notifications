@@ -3,12 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <title>Go Heels Notifications</title>
+        <link rel='stylesheet' href='/static/styles.css' />    
     </head>
     <body>
-        <h1>Go Heels Notification Portal</h1>
+        <h1>Go Heels Notifications</h1>
 
         <div class="myDiv">
-            <h3>Notifications Temporary Title</h3>
+            <h3>Tar Heel Sports Notification Portal</h3>
+
+            <form action="/sports" method="post">
+              Select an Team to Learn More:
+                <input type="radio" name="sports" id="basketball" value="basketball" onClick="myFunction()"/><label for="basketball">Basketball</label>
+                <input type="radio" name="sports" id="football" value="football" onClick="myFunction()"/><label for="football">Football</label>
+                <input type="radio" name="sports" id="soccer" value="soccer" onClick="myFunction()"/><label for="soccer">Soccer</label>
+                <input type="radio" name="sports" id="random" value="random" onClick="myFunction()"/><label for="random">Random Team!</label>
+                <input type="submit" value="Submit">
+
+                <br/> <br />
+
+                <p id="basketball-text" name="radio_group" style="display:none">Basketball Information</p>
+                <p id="football-text" name="radio_group" style="display:none">Football Information</p>
+                <p id="soccer-text" name="radio_group" style="display:none">Soccer Information</p>
+                <p id="random-text" name="radio_group" style="display:none">Random Information</p>
+
+              
+            </form>
+            <!-- {% extends "./sports.html" %} -->
+
+            <script>
+                function myFunction() {
+                var btext = document.getElementById("basketball-text");
+                var ftext = document.getElementById("football-text");
+                var stext = document.getElementById("soccer-text");
+                var rtext = document.getElementById("random-text");
+
+        
+                  if (document.getElementById("basketball").checked == true){
+                    ftext.style.display = "none";
+                    stext.style.display = "none";
+                    rtext.style.display = "none";
+                    btext.style.display = "block";
+                  }
+                  else if (document.getElementById("football").checked == true){
+                    btext.style.display = "none";
+                    stext.style.display = "none";
+                    rtext.style.display = "none";
+                    ftext.style.display = "block";
+                  } 
+                  else if (document.getElementById("soccer").checked == true){
+                    btext.style.display = "none";
+                    ftext.style.display = "none";
+                    rtext.style.display = "none";
+                    stext.style.display = "block";
+                  }
+                  else if (document.getElementById("random").checked == true){
+                    btext.style.display = "none";
+                    ftext.style.display = "none";
+                    stext.style.display = "none";
+                    rtext.style.display = "block";
+                  }
+                  else {
+                     text.style.display = "none";
+                  }
+                }
+                </script> 
         </div>
     </body>
 </html>

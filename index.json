@@ -1,0 +1,43 @@
+[{
+    "id": 1,
+    "team": "Elizabeth City State",
+    "date": "Nov 5 (FRI)",
+    "time": "7:30PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 2,
+    "team": "Loyola",
+    "date": "Nov 9 (TUE)",
+    "time": "7:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 3,
+    "team": "Brown",
+    "date": "Nov 12 (FRI)",
+    "time": "9:00PM",
+    "location": "Chapel Hill, NC"
+}, {
+    "id": 4,
+    "team": "College of Charleston",
+    "date": "Nov 16 (TUE)",
+    "time": "9:00PM",
+    "location": "Charleston, S.C."
+}, {
+    "id": 5,
+    "team": "Purdue",
+    "date": "Nov 20 (SAT)",
+    "time": "4:00PM",
+    "location": "Uncasville, Conn"
+}, {
+    "id": 6,
+    "team": "Villanova or Tennessee",
+    "date": "Nov 21 (SUN)",
+    "time": "1:00PM OR 3:30PM",
+    "location": "Uncasville, Conn."
+}, {
+    "id": 7,
+    "team": "UNC Asheville",
+    "date": "Nov 23 (TUE)",
+    "time": "7:00PM",
+    "location": "Chapel Hill, NC"
+}]

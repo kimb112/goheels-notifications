@@ -5,4 +5,8 @@ class game:
     time: str
     location: str
 
-    def __in
+    def __init__(self, team: str, date: str, time: str, location: str):
+        self.team = team
+        self.date = date
+        self.time = time
+        self.location = location
