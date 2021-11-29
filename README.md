@@ -22,8 +22,9 @@ Thi Le: Implemented reusability in project by importing events from a JSON file.
 Kimberly Brown: Created basic frame for application with radio buttons (including submit button) and initial text display in CSS and HTML.
 
 ## Goals Achieved
-Created an alert system that allows users to see how many days in the future the event will occur or if the event has already passed.
-Allowed users to select a sport from a list of sports and see all future events.
+- Created an alert system that allows users to see how many days in the future the event will occur or if the event has already passed.
+- Allowed users to select a sport from a list of sports and see all future events.
 
 ## Goals Outstanding / Future Work
-Expand application to include all sports and allow for filtering of games based on time, location, team, etc.  Allow for users to see distance from their location and event location.
+- Expand application to include all sports and allow for filtering of games based on time, location, team, etc.  
+- Allow for users to see distance from their location and event location.
